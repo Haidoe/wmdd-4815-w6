@@ -5,11 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W6</title>
+  <title>HTML Forms</title>
+  <style>
+    input,
+    label {
+      display: block;
+      margin: 1rem 0;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>HTML Forms</h1>
 
+  <main>
+
+    <form action="https://www.google.com/search" method="get">
+      <label for="search-text"> Search For: </label>
+      <input type="text" id="search-text" name="q">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+
+    <br>
+
+    <form action="https://api.agify.io/" method="get">
+      <label for="fname"> What is your name? </label>
+      <input type="text" id="fname" name="name">
+      <label for="country"> Which country are you from? </label>
+      <input type="text" id="country" name="country_id">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+
+  </main>
 </body>
 
 </html>
