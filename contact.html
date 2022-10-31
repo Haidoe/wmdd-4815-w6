@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+
+  <style>
+    input,
+    label,
+    textarea {
+      display: block;
+    }
+
+    textarea {
+      width: 70%;
+      resize: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label>
+        First Name:
+        <input type="text" id="fname" placeholder="Firstname" required>
+      </label>
+
+      <label for="lname"> Last Name:</label>
+      <input type="text" id="lname">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="0" value="18">
+
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone">
+
+      <label for="province"> Select your province:</label>
+      <select name="province" id="province">
+        <option value="bc">British Columbia</option>
+        <option value="on">Ontario</option>
+        <option value="ab">Alberta</option>
+        <option value="qc">Quebec</option>
+        <option value="mb">Manitoba</option>
+      </select>
+
+      <fieldset>
+        <legend>Choose your gender</legend>
+        <label>
+          Female
+          <input type="radio" name="gender" value="female">
+        </label>
+
+        <label>
+          Male
+          <input type="radio" name="gender" value="male">
+        </label>
+
+        <label>
+          Non-binary
+          <input type="radio" name="gender" value="non-binary">
+        </label>
+
+        <label>
+          Prefer not to say
+          <input type="radio" name="gender" value="prefer-not-to-say">
+        </label>
+      </fieldset>
+
+      <label for="comment">Comment</label>
+      <textarea name="comment"></textarea>
+
+      <input type="submit" value="Submit">
+
+      <input type="reset" value="Clear" />
+    </form>
+  </main>
+</body>
+
+</html>
