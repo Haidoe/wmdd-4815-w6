@@ -1,0 +1,31 @@
+h1:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+a {
+  font-size: 3rem;
+  text-decoration: none;
+  border: 1px solid hotpink;
+  padding: 0.5rem;
+  border-radius: 30px;
+}
+
+/* Not visited */
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: darkgreen;
+}
+
+a:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+a:active {
+  background-color: lightpink;
+  color: red;
+}
